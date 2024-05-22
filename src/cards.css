@@ -10,6 +10,21 @@
 /* card itself
 ********************************************************************/
 
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ff542c; /* синий */
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background-color: #ff480a; /* темно-синий */
+}
+
+
 .playingCards .card {
   display: inline-block;
   width: 3.3em;

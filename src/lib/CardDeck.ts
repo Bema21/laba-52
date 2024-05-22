@@ -1,4 +1,4 @@
-import Card from "./Card.ts";
+import Card from "./Card";
 
 export default class CardDeck {
     public cards: Card [];
@@ -10,7 +10,7 @@ export default class CardDeck {
 
         for (const rank of ranks) {
             for (const suit of suits) {
-                this.cards.push(new Card(suit, rank));
+                this.cards.push(new Card(rank, suit));
             }
         }
     }
@@ -18,7 +18,6 @@ export default class CardDeck {
     getCard(): Card {
         return this.cards.splice(Math.floor(Math.random()*this.cards.length), 1 )[0];
     }
-
 
     getCards(howMany:number): Card[]{
         const cards: Card[] = [];
